@@ -7,10 +7,4 @@ public interface IUserList
     /// Entries CAN be NULL!
     /// </summary>
     IUser?[] Users { get; }
-
-    /// <summary>
-    /// The local player.
-    /// Entry CAN be NULL!
-    /// </summary>
-    IUser? LocalPlayer { get; }
 }

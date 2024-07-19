@@ -6,5 +6,4 @@ internal class UserList : IUserList
     const int UserArraySize = 100;
 
     public IUser?[] Users { get; } = new IUser[UserArraySize];
-    public IUser? LocalPlayer { get => Users[0]; }
 }
