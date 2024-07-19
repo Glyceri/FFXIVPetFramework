@@ -25,6 +25,8 @@ public unsafe abstract class Pet : IPet
     {
         Owner = owner;
 
+        Marked = true;
+
         Character = character;
         Address = (nint)Character;
 
@@ -43,6 +45,7 @@ public unsafe abstract class Pet : IPet
         Address = pointer;
         Character = (Character*)pointer;
 
+        Marked = true;
         Lifetime++;
     }
 

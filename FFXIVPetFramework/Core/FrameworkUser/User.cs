@@ -135,8 +135,5 @@ public unsafe class User : IFrameworkUser
         Pets.Add(PetBuilder.GetBattlePet(battlePet, this));
     }
 
-    public void Dispose()
-    {
-
-    }
+    public virtual void Dispose() { }
 }
